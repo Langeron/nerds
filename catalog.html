@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nerds каталог</title>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<nav>
+				<img src="img/nerds-logo.svg" alt="Nerds" width="160" height="65">
+				<ul class="site_navigation">
+					<li class="navigation_item"><a href="#">Студия</a></li>
+					<li class="navigation_item"><a href="#">Клиенты</a></li>
+					<li class="navigation_item"><a href="#">Магазин</a></li>
+					<li class="navigation_item"><a href="#">Контакты</a></li>
+				</ul>
+				<ul class="user_navigation">
+					<li class="basket"><a href="#">Корзина</a></li>
+				</ul>
+			</nav>
+			<h1>Магазин готовых шаблонов</h1>
+		</div>
+	</header>
+
+	<main>
+		<div class="container">
+			<section class="filters">
+				<form class="filter" action="#" method="POST">
+
+					<div class="filter_range">
+						<span>Стоимость:</span>
+						<div class="scale">
+							<div class="bar"></div>
+							<div class="range_roller_min"></div>
+							<div class="range_roller_max"></div>
+						</div>
+						<label>От
+							<input class="min_price" type="text" name="min_price" value="0">
+						</label>
+						<label>До
+							<input class="max_price" type="text" name="max_price" value="15000">
+						</label>
+					</div>
+
+					<fieldset class="grid">
+						<legend>Сетка:</legend>
+						<ul>
+							<li>
+								<input class="visually_hidden" type="radio" name="grid" id="adaptive" value="adaptive" checked>
+								<label for="adaptive">Адаптивная</label>
+							</li>
+							<li>
+								<input class="visually_hidden" type="radio" name="grid" id="fixed" value="fixed">
+								<label for="fixed">Фиксированная</label>
+							</li>
+							<li>
+								<input class="visually_hidden" type="radio" name="grid" id="rubber" value="rubber">
+								<label for="rubber">Резиновая</label></li>
+							</ul>
+						</fieldset>
+
+						<fieldset class="filter_feature">
+							<legend>Особенности:</legend>
+							<ul>
+								<li>
+									<input class="visually_hidden" name="slider"  id="slider" type="checkbox" checked>
+									<label for="slider">Слайдер</label>
+								</li>
+								<li>
+									<input class="visually_hidden" name="feature_block"  id="feature_block" type="checkbox">
+									<label for="feature_block">Блок преимуществ</label>
+								</li>
+								<li>
+									<input class="visually_hidden" name="news"  id="news" type="checkbox" checked>
+									<label for="news">Новости</label>
+								</li>
+								<li>		
+									<input class="visually_hidden" name="gallery"  id="gallery" type="checkbox">
+									<label for="gallery">Галерея</label>
+								</li>
+								<li>
+									<input class="visually_hidden" name="basket"  id="basket" type="checkbox">
+									<label for="basket">Корзина</label>
+								</li>
+							</ul>
+							<button type="submit">Показать</button>
+						</fieldset>
+					</form>
+				</section>
+				<section class="catalog">
+					<div class="sorting">
+						<span>Сортировать</span>
+						<ul class="sorting_list">
+							<li>По цене</li>
+							<li>По типу</li>
+							<li>По названию</li>
+						</ul>
+					</div>
+					<ul class="catalog_list">
+						<li class="catalog_item">
+							<a href="#">
+								<div class="catalog_item_header"></div>
+								<p class="catalog_item_image">	
+									<p class="catalog_item_image">	
+										<img src="" alt="Sedona" width="360" height="576">
+									</p>
+								</p>
+								<div class="catalog_item_hover">
+									<h3 class="catalog_title">Sedona</h3>
+									<p class="catalog_description">Информационный сайт для туристов</p>
+									<span class="btn catalog_btn">9 900руб.</span>
+								</div>
+							</a>
+						</li>
+						<li class="catalog_item">
+							<a href="#">
+								<div class="catalog_item_header"></div>
+								<p class="catalog_item_image">	
+									<img src="" alt="Pink" width="360" height="576">
+								</p>
+								<div class="catalog_item_hover">
+									<h3 class="catalog_title">Pink app</h3>
+									<p class="catalog_description">Продуктовый лендинг приложения для iOS и Android</p>
+									<span class="btn catalog_btn">9 900руб.</span>
+								</div>
+							</a>
+						</li>
+						<li class="catalog_item">
+							<a href="#">
+								<div class="catalog_item_header"></div>
+								<p class="catalog_item_image">	
+									<img src="" alt="Barbershop" width="360" height="576">
+								</p>
+								<div class="catalog_item_hover">
+									<h3 class="catalog_title">Barbershop</h3>
+									<p class="catalog_description">Сайт салоны красоты.Для мужчин, да.</p>
+									<span class="btn catalog_btn">9 900руб.</span>
+								</div>
+							</a>
+						</li>
+						<li class="catalog_item">
+							<a href="#">
+								<div class="catalog_item_header"></div>
+								<p class="catalog_item_image">	
+									<img src="" alt="Mishka" width="360" height="576">
+								</p>
+								<div class="catalog_item_hover">
+									<h3 class="catalog_title">Mishka</h3>
+									<p class="catalog_description">Интернет-магазин вязаных игрушек</p>
+									<span class="btn catalog_btn">9 900руб.</span>
+								</div>
+							</a>
+						</li>
+						<li class="catalog_item">
+							<a href="#">
+								<div class="catalog_item_header"></div>
+								<p class="catalog_item_image">	
+									<img src="" alt="A Plus" width="360" height="576">
+								</p>
+								<div class="catalog_item_hover">
+									<h3 class="catalog_title">A Plus</h3>
+									<p class="catalog_description">Лендинг курсов повышения квалификации</p>
+									<span class="btn catalog_btn">9 900руб.</span>
+								</div>
+							</a>
+						</li>
+						<li class="catalog_item">
+							<a href="#">
+								<div class="catalog_item_header"></div>
+								<p class="catalog_item_image">	
+									<img src="" alt="Кваст" width="360" height="576">
+								</p>
+								<div class="catalog_item_hover">
+									<h3 class="catalog_title">Кваст</h3>
+									<p class="catalog_description">Промо-сайт производителя крафтового кваса</p>
+									<span class="btn catalog_btn">9 900руб.</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</section>
+				<ul class="pagination_list">
+					<li class="pagination_item pagination_item_current"><a href="#">1</a></li>
+					<li class="pagination_item"><a href="#">2</a></li>
+					<li class="pagination_item"><a href="#">3</a></li>
+					<li class="pagination_item"><a href="#">Следующая</a></li>
+				</ul>
+			</div>
+			<div class="map">
+				<img src="map.jpg" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+				<div class="address">
+					<p class="address_title">NЁRDS DESIGN STUDIO</p>
+					<p class="address_location">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+					<p class="address_phone">тел. +7 (812) 275-75-75</p>
+					<a href="#" class="btn address_btn">Напишите нам</a>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="container">
+				<ul class="social-list">
+					<li class="vk">Вконтакте</li>
+					<li class="fb">Фейсбук</li>
+					<li class="instagram">Инстаграмм</li>
+				</ul>
+				<p>	
+					Давайте дружить, это выгодно! <span>Скидка 10% для друзей из социальных сетей.</span>
+				</p>
+			</div>
+		</footer>
+	</body>
+	</html>

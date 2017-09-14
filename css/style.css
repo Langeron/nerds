@@ -1,0 +1,72 @@
+html { 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+
+*, *:before, *:after { 
+	-webkit-box-sizing: inherit; 
+	box-sizing: inherit; 
+}
+
+body {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+header {
+	min-height: 545px;
+	background-color: #eeeeee;
+
+}
+
+.sliders {
+	position: relative;
+}
+
+.slide {
+	display: none;
+}
+
+#btn_one:checked ~ .slide_one,
+#btn_two:checked ~ .slide_two,
+#btn_three:checked ~ .slide_three {
+	display: block;
+}
+
+#btn_one:checked ~ .slide_controls label[for="btn_one"]:after,
+#btn_two:checked ~ .slide_controls label[for="btn_two"]:after,
+#btn_three:checked ~ .slide_controls label[for="btn_three"]:after {
+	content: "";
+	position: absolute;
+	height: 8px;
+	width: 8px;
+	background-color: #fff;
+	border: 2px solid #c1c1c1;
+	border-radius: 50%;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+}
+
+.sliders input {
+	display: none;
+}
+
+.slide_controls {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+
+.sliders label {
+	display: inline-block;
+	position: relative;
+	width: 18px;
+	height: 18px;
+	margin-right: 8px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+

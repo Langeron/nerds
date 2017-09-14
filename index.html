@@ -3,8 +3,144 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Nerds</title>
+	<!-- <link rel="stylesheet" href="css/style.css"> -->
 </head>
 <body>
-	
+	<header>
+		<div class="container">
+			<nav>
+				<img src="img/nerds-logo.svg" alt="Nerds" width="160" height="65">
+				<ul class="site_navigation">
+					<li class="navigation_item"><a href="#">Студия</a></li>
+					<li class="navigation_item"><a href="#">Клиенты</a></li>
+					<li class="navigation_item"><a href="#">Магазин</a></li>
+					<li class="navigation_item"><a href="#">Контакты</a></li>
+				</ul>
+				<ul class="user_navigation">
+					<li class="basket"><a href="#">Корзина</a></li>
+				</ul>
+			</nav>
+			<div class="sliders">
+				<input type="radio" name="toggle" id="btn_one" checked>
+				<input type="radio" name="toggle" id="btn_two">
+				<input type="radio" name="toggle" id="btn_three">
+				<div class="slide slide_one">
+					<h2>Долго, дорого, скрупулезно</h2>
+					<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+					<a class="btn slider_btn" href="#">Узнать больше</a>
+				</div>
+				<div class="slide slide_two">
+					<h2>Любим математику как никто другой</h2>
+					<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+					<a class="btn slider_btn" href="#">Узнать больше</a>
+				</div>
+				<div class="slide slide_three">
+					<h2>Долго, дорого, скрупулезно</h2>
+					<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+					<a class="btn slider_btn" href="#">Узнать больше</a>
+				</div>
+				<div class="slide_controls">
+					<label for="btn_one"></label>
+					<label for="btn_two"></label>
+					<label for="btn_three"></label>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<div class="container">
+			<section class="offer">
+				<h2 class="visually-hidden">Наши предложения</h2>
+				<ul class="offer_list">
+					<li class="offer_item">
+						<div class="offer_img"></div>
+						<h3>Веб-сайты</h3>
+						<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+						<a class="btn offer_btn" href="#">Заказать</a>
+					</li>
+					<li class="offer_item">
+						<div class="offer_img"></div>
+						<h3>Приложения</h3>
+						<p>Покорите топ-10 приложений в AppStore и Google Play</p>
+						<a class="btn offer_btn" href="#">Заказать</a>
+					</li>
+					<li class="offer_item">
+						<div class="offer_img"></div>
+						<h3>Презентации</h3>
+						<p>Вы даже не подозреваете, насколько вы изумительны!</p>
+						<a class="btn offer_btn" href="#">Заказать</a>
+					</li>
+				</ul>
+			</section>
+
+			<section class="features">
+				<h2 class="visually-hidden">Наши особенности</h2>
+				<div class="about">
+					<h1>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h1>
+					<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+					<p><span>Выполняем заказы на разработку:</span>
+						<ul class="about_list">
+							<li>Веб-сайтов любой сложности</li>
+							<li>Мобильных приложений для iOS и Android</li>
+							<li>Слайдшоу и видео для корпоративных презентаций</li>
+						</ul>
+					</p>
+				</div>
+				<div class="stat">
+					<img src="img/nerds-logo2.svg" alt="Nerds">
+					<p><span>с 2004 года Любим точность во всем:</span>
+						<ul class="stat_list">
+							<li><span class="percent">146%</span>Уровень самоотдачи</li>
+							<li><span class="percent">100%</span>Соблюдение сроков</li>
+							<li><span class="percent">50%</span>Минимальная предоплата</li>
+						</ul>
+					</p>
+				</div>
+			</section>
+
+			<section class="our_works">
+				<a href="#"><img src="academy.svg" alt="Html Academy"></a>
+				<a href="#"><img src="borodinsiki.svg" alt="Barbershop"></a>
+				<a href="#"><img src="pink.svg" alt="Pink"></a>
+				<a href="#"><img src="mishka.svg" alt="Mishka"></a>
+			</section>
+		</div>
+		<div class="map">
+		<img src="map.jpg" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+			<div class="address">
+				<p class="address_title">NЁRDS DESIGN STUDIO</p>
+				<p class="address_location">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+				<p class="address_phone">тел. +7 (812) 275-75-75</p>
+				<a href="#" class="btn address_btn">Напишите нам</a>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div class="container">
+			<ul class="social-list">
+				<li class="vk">Вконтакте</li>
+				<li class="fb">Фейсбук</li>
+				<li class="instagram">Инстаграмм</li>
+			</ul>
+			<p>	
+				Давайте дружить, это выгодно! <span>Скидка 10% для друзей из социальных сетей.</span>
+			</p>
+		</div>
+	</footer>
+
+	<div class="modal modal-feedback">
+		<p>Напишите нам</p>
+		<form action="#" method="get">
+			<label>Ваше имя
+				<input type="text" name="name" placeholder="Представьтесь, пожалуйста">
+			</label>
+			<label>Ваш e-mail:
+				<input type="text" name="mail" placeholder="Для отправки ответа">
+			</label>
+			<textarea cols="30" rows="10" placeholder="В свободной форме"></textarea>
+		</form>
+	</div>
 </body>
 </html>
