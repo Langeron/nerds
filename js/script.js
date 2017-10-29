@@ -53,8 +53,8 @@ window.addEventListener("keydown", function (evt) {
 });
 
 // Карта
-var latitude = 59.938794,
-longitude = 30.321184,
+var latitude = 59.939122, 
+longitude =  30.321530,
 map_zoom = 17;
 
 var marker_url = 'img/map-marker.png';
